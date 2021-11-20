@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AMS1117-3.3
+D 15V 1.3V @ 800mA Fixed 3.3V SOT-223 LDO
+F https://datasheet.lcsc.com/lcsc/1811142212_Advanced-Monolithic-Systems-AMS1117-3-3_C6186.pdf
+$ENDCMP
+#
+$CMP USBLC6-2SC6
+D Unidirectional 5A 17V 6V 5.25V SOT-23-6 ESD Protection Devices ROHS
+F https://datasheet.lcsc.com/lcsc/1811141711_STMicroelectronics-USBLC6-2SC6_C7519.pdf
+$ENDCMP
+#
+#End Doc Library

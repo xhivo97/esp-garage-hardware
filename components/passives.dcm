@@ -1,0 +1,58 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 0R
+D 0R 0805 resistor  ±1% 0.125W
+F https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0805FR-070RL_C100045.html
+$ENDCMP
+#
+$CMP 100nF
+D X7R 50V ±10% 100nF 0805
+F https://datasheet.lcsc.com/lcsc/1810101813_YAGEO-CC0805KRX7R9BB104_C49678.pdf
+$ENDCMP
+#
+$CMP 100uF
+D 5000hrs@105℃ -45℃~+105℃ 100uF 10mm 50V
+F https://datasheet.lcsc.com/lcsc/1809201815_Nichicon-UUD1H101MNL1GS_C116241.pdf
+$ENDCMP
+#
+$CMP 10k
+D 10K 0805 resistor  ±5% 0.125W
+F https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0805JR-0710KL_C100047.html
+$ENDCMP
+#
+$CMP 10uF
+D X5R 25V ±10% 10uF 0805
+F https://datasheet.lcsc.com/lcsc/2001071133_Murata-Electronics-GJ821BR61E106KE11L_C471371.pdf
+$ENDCMP
+#
+$CMP 10uF_tantalum
+D 110uF 16V CASE-B_3528 Tantalum
+F https://datasheet.lcsc.com/lcsc/1806132233_PANASONIC-16TQC10M_C147769.pdf
+$ENDCMP
+#
+$CMP 1uF
+D Y5V 25V ±20% 1uF 0805
+F https://datasheet.lcsc.com/lcsc/2008191833_YAGEO-CC0805MRY5V7BB105_C520017.pdf
+$ENDCMP
+#
+$CMP 2.2uH_0806
+D 74479276222C - 2.2uH 1.6A 125mOhm
+F https://www.we-online.com/katalog/datasheet/74479276222C.pdf
+$ENDCMP
+#
+$CMP 5k1
+D 5K1 0805 resistor  ±1% 0.125W
+F https://datasheet.lcsc.com/lcsc/1810112312_YAGEO-RC0805FR-075K1L_C84375.pdf
+$ENDCMP
+#
+$CMP 75R
+D 75R 0805 resistor  ±1% 0.125W
+F https://datasheet.lcsc.com/lcsc/1810311312_YAGEO-RC0805FR-0775RL_C141697.pdf
+$ENDCMP
+#
+$CMP nSMD025-30V
+D 30V 500mA 1206 Resettable Fuses ROHS
+F https://lcsc.com/product-detail/Resettable-Fuses_TECHFUSE-nSMD025-30V_C70070.html
+$ENDCMP
+#
+#End Doc Library

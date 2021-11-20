@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1N4148
+D DO-35 Switching Diode
+F https://datasheet.lcsc.com/lcsc/1809281716_ST-Semtech-1N4148_C14538.pdf
+$ENDCMP
+#
+$CMP RS3KHE3_A_I
+D 800V -55℃@(Tj) +150℃@(Tj) 1.3V@2.5A 500ns 10μA@800V 3A
+F https://datasheet.lcsc.com/lcsc/1808280315_Vishay-Intertech-RS3KHE3-A-I_C241878.pdf
+$ENDCMP
+#
+$CMP STPS1H100U
+D 100V 1A 770mV @ 1A SMB(DO-214AA) Schottky Barrier Diodes (SBD) ROHS
+F https://datasheet.lcsc.com/lcsc/1810130916_STMicroelectronics-STPS1H100U_C165939.pdf
+$ENDCMP
+#
+#End Doc Library

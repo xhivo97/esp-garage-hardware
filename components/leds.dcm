@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LED
+D Red 627~635nm 1.8V~2.6V Through Hole,P=2.54mm
+F https://datasheet.lcsc.com/lcsc/2006301913_HONGLITRONIC-Hongli-Zhihui--HONGLITRONIC--HL-304S9AD_C568936.pdf
+$ENDCMP
+#
+#End Doc Library

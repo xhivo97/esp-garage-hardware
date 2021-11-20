@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP G5LA-14-DC5
+D SPDT 10A Non Latching 5VDC
+F https://datasheet.lcsc.com/lcsc/1809191411_Omron-Electronics-G5LA-14-DC5_C27822.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,1418 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Espressif:ESP32-C3-WROOM-02 U1
+U 1 1 6151D71F
+P 2700 2850
+F 0 "U1" H 2725 4265 50  0000 C CNN
+F 1 "ESP32-C3-WROOM-02" H 2725 4174 50  0000 C CNN
+F 2 "footprints:ESP32-C3-WROOM-02" H 2700 1550 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf" H 250 1550 50  0001 C CNN
+	1    2700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L modules:dc-dc_3A5V U2
+U 1 1 61522B84
+P 5750 5000
+F 0 "U2" H 5750 5325 50  0000 C CNN
+F 1 "dc-dc_3A5V" H 5750 5234 50  0000 C CNN
+F 2 "footprints:dc-dc_converter_module" H 5750 5800 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32787166862.html?spm=a2g0s.9042311.0.0.70ed4c4dXTVoNA" H 5750 5800 50  0001 C CNN
+	1    5750 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L connectors:JST-XH-3 J5
+U 1 1 6152641B
+P 6150 6600
+F 0 "J5" H 6278 6651 50  0000 L CNN
+F 1 "JST-XH-3" H 6278 6560 50  0000 L CNN
+F 2 "footprints:JST_XH_B03B-XH-A_03x2.50mm_Straight" H 6150 7500 50  0001 C CNN
+F 3 "" H 6150 7500 50  0001 C CNN
+	1    6150 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L connectors:JST-XH-2 J4
+U 1 1 61528814
+P 4800 7050
+F 0 "J4" H 4928 7101 50  0000 L CNN
+F 1 "JST-XH-2" H 4928 7010 50  0000 L CNN
+F 2 "footprints:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 5200 7900 50  0001 C CNN
+F 3 "" H 5200 7900 50  0001 C CNN
+	1    4800 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L connectors:7.62mm-2pin J1
+U 1 1 6152BE34
+P 2450 6950
+F 0 "J1" H 2528 6996 50  0000 L CNN
+F 1 "7.62mm-2pin" H 2528 6905 50  0000 L CNN
+F 2 "footprints:PhoenixContact_GMSTBVA-G_02x7.62mm_Vertical" H 2450 6700 50  0001 C CNN
+F 3 "" H 2400 7450 50  0001 C CNN
+	1    2450 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L connectors:7.62mm-2pin J8
+U 1 1 6152CB0F
+P 9650 3500
+F 0 "J8" H 9728 3546 50  0000 L CNN
+F 1 "7.62mm-2pin" H 9728 3455 50  0000 L CNN
+F 2 "footprints:PhoenixContact_GMSTBVA-G_02x7.62mm_Vertical" H 9650 3250 50  0001 C CNN
+F 3 "" H 9600 4000 50  0001 C CNN
+	1    9650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L connectors:U262-161N-4BVC11 USB1
+U 1 1 6153698C
+P 5800 2950
+F 0 "USB1" H 5750 3750 60  0000 C CNN
+F 1 "U262-161N-4BVC11" V 5650 2950 60  0000 C CNN
+F 2 "footprints:XKB-USB-C-16P" H 5800 2100 60  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2002271811_XKB-Connectivity-U262-161N-4BVC11_C319148.pdf" H 6150 4100 60  0001 C CNN
+	1    5800 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2300 6050 2300
+Wire Wire Line
+	6050 2300 6050 2350
+Wire Wire Line
+	6050 2350 6000 2350
+Wire Wire Line
+	6000 2450 6050 2450
+Wire Wire Line
+	6050 2450 6050 2500
+Wire Wire Line
+	6050 2500 6000 2500
+Wire Wire Line
+	6000 2900 6050 2900
+Wire Wire Line
+	6050 2900 6050 3100
+Wire Wire Line
+	6050 3100 6000 3100
+Wire Wire Line
+	6000 3000 6100 3000
+Wire Wire Line
+	6100 3000 6100 2800
+Wire Wire Line
+	6100 2800 6000 2800
+Wire Wire Line
+	6000 3550 6050 3550
+Wire Wire Line
+	6050 3550 6050 3600
+Wire Wire Line
+	6050 3600 6000 3600
+Wire Wire Line
+	6000 3700 6050 3700
+Wire Wire Line
+	6050 3700 6050 3600
+Connection ~ 6050 3600
+NoConn ~ 6000 3200
+$Comp
+L power_and_ground:GND #GND013
+U 1 1 6154BB6A
+P 6050 3700
+F 0 "#GND013" H 6050 3750 50  0001 C CNN
+F 1 "GND" H 6050 3550 50  0000 C CNN
+F 2 "" H 6050 3700 50  0001 C CNN
+F 3 "" H 6050 3700 50  0001 C CNN
+	1    6050 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 3700
+$Comp
+L power_and_ground:GND #GND015
+U 1 1 6154D64A
+P 6400 2400
+F 0 "#GND015" H 6400 2450 50  0001 C CNN
+F 1 "GND" H 6400 2250 50  0000 C CNN
+F 2 "" H 6400 2400 50  0001 C CNN
+F 3 "" H 6400 2400 50  0001 C CNN
+	1    6400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:5V_USB #PWR012
+U 1 1 615592A9
+P 6200 2150
+F 0 "#PWR012" H 6200 2100 50  0001 C CNN
+F 1 "5V_USB" H 6200 2250 50  0000 C CNN
+F 2 "" H 6200 2350 50  0001 C CNN
+F 3 "" H 6200 2350 50  0001 C CNN
+	1    6200 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3450 6050 3450
+Wire Wire Line
+	6050 3450 6050 3400
+Wire Wire Line
+	6050 3400 6000 3400
+Wire Wire Line
+	6200 2500 6050 2500
+Connection ~ 6050 2500
+Wire Wire Line
+	6200 2500 6200 2200
+Wire Wire Line
+	6050 2350 6400 2350
+Connection ~ 6050 2350
+Text GLabel 6600 3100 2    50   Input ~ 0
+USBD+
+Text GLabel 6600 3000 2    50   Input ~ 0
+USBD-
+Wire Wire Line
+	6050 3100 6600 3100
+Connection ~ 6050 3100
+Wire Wire Line
+	6100 3000 6600 3000
+Connection ~ 6100 3000
+$Comp
+L diodes:STPS1H100U D5
+U 1 1 6155E80A
+P 8100 1800
+F 0 "D5" H 8075 2025 50  0000 C CNN
+F 1 "STPS1H100U" H 8075 1934 50  0000 C CNN
+F 2 "footprints:DIOM5436X245N" H 8100 1600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810130916_STMicroelectronics-STPS1H100U_C165939.pdf" H 8050 2300 50  0001 C CNN
+F 4 "STPS1H100U" H 8100 1500 50  0001 C CNN "Part Number"
+	1    8100 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:5V_USB #PWR014
+U 1 1 6155F4B8
+P 7650 1750
+F 0 "#PWR014" H 7650 1700 50  0001 C CNN
+F 1 "5V_USB" H 7650 1850 50  0000 C CNN
+F 2 "" H 7650 1950 50  0001 C CNN
+F 3 "" H 7650 1950 50  0001 C CNN
+	1    7650 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:5V_IN #PWR018
+U 1 1 6155FA9A
+P 8450 1750
+F 0 "#PWR018" H 8450 1700 50  0001 C CNN
+F 1 "5V_IN" H 8450 1850 50  0000 C CNN
+F 2 "" H 8450 1950 50  0001 C CNN
+F 3 "" H 8450 1950 50  0001 C CNN
+	1    8450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:GND #GND020
+U 1 1 615600F3
+P 8450 2100
+F 0 "#GND020" H 8450 2150 50  0001 C CNN
+F 1 "GND" H 8450 1950 50  0000 C CNN
+F 2 "" H 8450 2100 50  0001 C CNN
+F 3 "" H 8450 2100 50  0001 C CNN
+	1    8450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:VDD33 #PWR022
+U 1 1 61560817
+P 9450 1750
+F 0 "#PWR022" H 9450 1700 50  0001 C CNN
+F 1 "VDD33" H 9450 1875 50  0000 C CNN
+F 2 "" H 9450 1950 50  0001 C CNN
+F 3 "" H 9450 1950 50  0001 C CNN
+	1    9450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L leds:LED D6
+U 1 1 61561220
+P 10250 2150
+F 0 "D6" H 10200 2050 50  0000 C CNN
+F 1 "LED" V 10350 2300 50  0000 C CNN
+F 2 "footprints:LED_D3.0mm" H 10250 1950 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2006301913_HONGLITRONIC-Hongli-Zhihui--HONGLITRONIC--HL-304S9AD_C568936.pdf" H 10250 2400 50  0001 C CNN
+F 4 "HL-304S9AD" H 10250 1850 50  0001 C CNN "Part Number"
+	1    10250 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L passives:5k1 R15
+U 1 1 61561AE6
+P 10250 1800
+F 0 "R15" H 10250 1900 50  0000 C CNN
+F 1 "5k1" H 10250 1700 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 10250 1650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810112312_YAGEO-RC0805FR-075K1L_C84375.pdf" H 10250 2200 50  0001 C CNN
+F 4 "RC0805FR-075K1L" H 10250 1575 50  0001 C CNN "Part Number"
+	1    10250 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L passives:10uF_tantalum C5
+U 1 1 615627E0
+P 8450 1950
+F 0 "C5" V 8350 1750 50  0000 C CNN
+F 1 "10uF_tantalum" V 8550 1550 50  0000 C CNN
+F 2 "footprints:CAP_16TQC10M" H 8450 1500 50  0001 L BNN
+F 3 "https://datasheet.lcsc.com/lcsc/1806132233_PANASONIC-16TQC10M_C147769.pdf" H 8500 1950 50  0001 L BNN
+F 4 "1.9 mm" H 8450 1325 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "30-Nov-20" H 8450 1425 50  0001 L BNN "PARTREV"
+F 6 "Panasonic" H 8450 1575 50  0001 L BNN "MANUFACTURER"
+F 7 "Manufacturer Recommendations" H 8450 1650 50  0001 L BNN "STANDARD"
+F 8 "16TQC10M" H 8250 1675 50  0001 C CNN "Part Number"
+	1    8450 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L passives:10uF_tantalum C6
+U 1 1 61564797
+P 9450 1950
+F 0 "C6" V 9350 2050 50  0000 C CNN
+F 1 "10uF_tantalum" V 9600 2250 50  0000 C CNN
+F 2 "footprints:CAP_16TQC10M" H 9450 1500 50  0001 L BNN
+F 3 "https://datasheet.lcsc.com/lcsc/1806132233_PANASONIC-16TQC10M_C147769.pdf" H 9500 1950 50  0001 L BNN
+F 4 "1.9 mm" H 9450 1325 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "30-Nov-20" H 9450 1425 50  0001 L BNN "PARTREV"
+F 6 "Panasonic" H 9450 1575 50  0001 L BNN "MANUFACTURER"
+F 7 "Manufacturer Recommendations" H 9450 1650 50  0001 L BNN "STANDARD"
+F 8 "16TQC10M" H 9250 1675 50  0001 C CNN "Part Number"
+	1    9450 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 1900 9300 1800
+Wire Wire Line
+	9300 1800 9450 1800
+Wire Wire Line
+	9300 2100 9450 2100
+$Comp
+L power_and_ground:GND #GND024
+U 1 1 61569C9A
+P 9450 2100
+F 0 "#GND024" H 9450 2150 50  0001 C CNN
+F 1 "GND" H 9450 1950 50  0000 C CNN
+F 2 "" H 9450 2100 50  0001 C CNN
+F 3 "" H 9450 2100 50  0001 C CNN
+	1    9450 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 9450 1800
+$Comp
+L power_and_ground:GND #GND025
+U 1 1 6156B6E7
+P 10250 2250
+F 0 "#GND025" H 10250 2300 50  0001 C CNN
+F 1 "GND" H 10250 2100 50  0000 C CNN
+F 2 "" H 10250 2250 50  0001 C CNN
+F 3 "" H 10250 2250 50  0001 C CNN
+	1    10250 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:VDD33 #PWR023
+U 1 1 6156C087
+P 10250 1550
+F 0 "#PWR023" H 10250 1500 50  0001 C CNN
+F 1 "VDD33" H 10250 1675 50  0000 C CNN
+F 2 "" H 10250 1750 50  0001 C CNN
+F 3 "" H 10250 1750 50  0001 C CNN
+	1    10250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 1800 8450 1800
+Connection ~ 8450 1800
+Wire Wire Line
+	8200 1800 8450 1800
+Wire Wire Line
+	7950 1800 7650 1800
+Connection ~ 9450 2100
+Text GLabel 4200 2600 2    50   Input ~ 0
+USBD+
+Text GLabel 4200 2500 2    50   Input ~ 0
+USBD-
+$Comp
+L passives:10k R3
+U 1 1 6154E5E5
+P 1650 1500
+F 0 "R3" H 1800 1600 50  0000 C CNN
+F 1 "10k" H 1550 1600 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 1650 1350 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0805JR-0710KL_C100047.html" H 1650 1900 50  0001 C CNN
+F 4 "RC0805JR-0710KL" H 1650 1275 50  0001 C CNN "Part Number"
+	1    1650 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L passives:10k R2
+U 1 1 6155143E
+P 950 3200
+F 0 "R2" H 950 3425 50  0000 C CNN
+F 1 "10k" H 950 3334 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 950 3050 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0805JR-0710KL_C100047.html" H 950 3600 50  0001 C CNN
+F 4 "RC0805JR-0710KL" H 950 2975 50  0001 C CNN "Part Number"
+	1    950  3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L passives:10uF C1
+U 1 1 6155208E
+P 1000 4050
+F 0 "C1" V 1100 3950 50  0000 C CNN
+F 1 "10uF" V 900 3900 50  0000 C CNN
+F 2 "footprints:CAPC2012X145N" H 1000 3825 50  0001 C BNN
+F 3 "https://datasheet.lcsc.com/lcsc/2001071133_Murata-Electronics-GJ821BR61E106KE11L_C471371.pdf" H 950 4050 50  0001 C BNN
+F 4 "GJ821BR61E106KE11L" H 1000 3775 50  0001 C CNN "Part Number"
+	1    1000 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L passives:100nF C4
+U 1 1 615527D4
+P 1400 4050
+F 0 "C4" V 1500 3950 50  0000 C CNN
+F 1 "100nF" V 1300 3900 50  0000 C CNN
+F 2 "footprints:CAPC2012X145N" H 1400 3825 50  0001 C BNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810101813_YAGEO-CC0805KRX7R9BB104_C49678.pdf" H 1350 4050 50  0001 C BNN
+F 4 "CC0805KRX7R9BB104" H 1400 3775 50  0001 C CNN "Part Number"
+	1    1400 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power_and_ground:VDD33 #PWR03
+U 1 1 61559651
+P 1000 3850
+F 0 "#PWR03" H 1000 3800 50  0001 C CNN
+F 1 "VDD33" H 1000 3950 50  0000 C CNN
+F 2 "" H 1000 4050 50  0001 C CNN
+F 3 "" H 1000 4050 50  0001 C CNN
+	1    1000 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3900 1400 3900
+Connection ~ 1000 3900
+$Comp
+L power_and_ground:GND #GND04
+U 1 1 6155C59D
+P 1400 4200
+F 0 "#GND04" H 1400 4250 50  0001 C CNN
+F 1 "GND" H 1400 4050 50  0000 C CNN
+F 2 "" H 1400 4200 50  0001 C CNN
+F 3 "" H 1400 4200 50  0001 C CNN
+	1    1400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:GND #GND01
+U 1 1 6155CD7E
+P 1000 4200
+F 0 "#GND01" H 1000 4250 50  0001 C CNN
+F 1 "GND" H 1000 4050 50  0000 C CNN
+F 2 "" H 1000 4200 50  0001 C CNN
+F 3 "" H 1000 4200 50  0001 C CNN
+	1    1000 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3900 1650 3900
+Connection ~ 1400 3900
+Text GLabel 3800 2300 2    50   Input ~ 0
+TXD
+Text GLabel 3800 2200 2    50   Input ~ 0
+RXD
+Wire Wire Line
+	3800 3800 3850 3800
+Wire Wire Line
+	3850 3800 3850 3900
+Wire Wire Line
+	3850 3900 3800 3900
+$Comp
+L power_and_ground:GND #GND08
+U 1 1 6157373A
+P 3850 3900
+F 0 "#GND08" H 3850 3950 50  0001 C CNN
+F 1 "GND" H 3850 3750 50  0000 C CNN
+F 2 "" H 3850 3900 50  0001 C CNN
+F 3 "" H 3850 3900 50  0001 C CNN
+	1    3850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:VDD33 #PWR02
+U 1 1 615776DB
+P 750 2950
+F 0 "#PWR02" H 750 2900 50  0001 C CNN
+F 1 "VDD33" H 750 3050 50  0000 C CNN
+F 2 "" H 750 3150 50  0001 C CNN
+F 3 "" H 750 3150 50  0001 C CNN
+	1    750  2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  3000 750  3200
+Wire Wire Line
+	1650 3200 1150 3200
+$Comp
+L power_and_ground:VDD33 #PWR04
+U 1 1 6157B8DB
+P 1650 1250
+F 0 "#PWR04" H 1650 1200 50  0001 C CNN
+F 1 "VDD33" H 1650 1350 50  0000 C CNN
+F 2 "" H 1650 1450 50  0001 C CNN
+F 3 "" H 1650 1450 50  0001 C CNN
+	1    1650 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1350 1400 1300
+Wire Wire Line
+	1400 1300 1650 1300
+Connection ~ 1650 1300
+Wire Wire Line
+	1650 1700 1650 2000
+$Comp
+L power_and_ground:GND #GND03
+U 1 1 615875DE
+P 1400 1650
+F 0 "#GND03" H 1400 1700 50  0001 C CNN
+F 1 "GND" H 1400 1500 50  0000 C CNN
+F 2 "" H 1400 1650 50  0001 C CNN
+F 3 "" H 1400 1650 50  0001 C CNN
+	1    1400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L passives:1uF C3
+U 1 1 6154F11B
+P 1400 1500
+F 0 "C3" H 1550 1600 50  0000 C CNN
+F 1 "1uF" H 1300 1600 50  0000 C CNN
+F 2 "footprints:CAPC2012X145N" H 1400 1275 50  0001 C BNN
+F 3 "https://datasheet.lcsc.com/lcsc/2008191833_YAGEO-CC0805MRY5V7BB105_C520017.pdf" H 1350 1500 50  0001 C BNN
+F 4 "CC0805MRY5V7BB105 " H 1400 1225 50  0001 C CNN "Part Number"
+	1    1400 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L switches:Switch SW1
+U 1 1 6154FAAB
+P 1300 5700
+F 0 "SW1" H 1325 5925 50  0000 C CNN
+F 1 "Switch" H 1325 5834 50  0000 C CNN
+F 2 "footprints:SW_PUSH_6mm" H 1300 5550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2001071208_XKB-Connectivity-TC-1102-B-B-B_C480282.pdf" H 1300 6000 50  0001 C CNN
+F 4 "TC-1102-B-B-B" H 1300 5450 50  0001 C CNN "Part Number"
+	1    1300 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L passives:100nF C2
+U 1 1 61562479
+P 1350 5850
+F 0 "C2" H 1500 5900 50  0000 C CNN
+F 1 "100nF" H 1150 5900 50  0000 C CNN
+F 2 "footprints:CAPC2012X145N" H 1350 5625 50  0001 C BNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810101813_YAGEO-CC0805KRX7R9BB104_C49678.pdf" H 1300 5850 50  0001 C BNN
+F 4 "CC0805KRX7R9BB104" H 1350 5575 50  0001 C CNN "Part Number"
+	1    1350 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power_and_ground:GND #GND02
+U 1 1 6156247F
+P 1050 5850
+F 0 "#GND02" H 1050 5900 50  0001 C CNN
+F 1 "GND" H 1050 5700 50  0000 C CNN
+F 2 "" H 1050 5850 50  0001 C CNN
+F 3 "" H 1050 5850 50  0001 C CNN
+	1    1050 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 5700 1150 5850
+Wire Wire Line
+	1150 5850 1200 5850
+Wire Wire Line
+	1500 5700 1500 5850
+Wire Wire Line
+	1150 5850 1050 5850
+Connection ~ 1150 5850
+$Comp
+L passives:0R R4
+U 1 1 6156850C
+P 1700 5700
+F 0 "R4" H 1700 5925 50  0000 C CNN
+F 1 "0R" H 1700 5834 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 1700 5550 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0805FR-070RL_C100045.html" H 1700 6100 50  0001 C CNN
+F 4 "RC0805FR-070RL" H 1700 5475 50  0001 C CNN "Part Number"
+	1    1700 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 1500 5700
+Text GLabel 1650 2000 0    50   Input ~ 0
+EN
+Text GLabel 1900 5700 2    50   Input ~ 0
+EN
+$Comp
+L passives:10k R1
+U 1 1 61597809
+P 950 2400
+F 0 "R1" H 950 2625 50  0000 C CNN
+F 1 "10k" H 950 2534 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 950 2250 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0805JR-0710KL_C100047.html" H 950 2800 50  0001 C CNN
+F 4 "RC0805JR-0710KL" H 950 2175 50  0001 C CNN "Part Number"
+	1    950  2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:VDD33 #PWR01
+U 1 1 6159780F
+P 750 2150
+F 0 "#PWR01" H 750 2100 50  0001 C CNN
+F 1 "VDD33" H 750 2250 50  0000 C CNN
+F 2 "" H 750 2350 50  0001 C CNN
+F 3 "" H 750 2350 50  0001 C CNN
+	1    750  2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  2200 750  2400
+Wire Wire Line
+	1650 2400 1150 2400
+$Comp
+L passives:0R R6
+U 1 1 61599EEA
+P 4000 2600
+F 0 "R6" H 3850 2550 50  0000 C CNN
+F 1 "0R" H 4150 2550 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 4000 2450 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0805FR-070RL_C100045.html" H 4000 3000 50  0001 C CNN
+F 4 "RC0805FR-070RL" H 4000 2375 50  0001 C CNN "Part Number"
+	1    4000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L passives:0R R5
+U 1 1 6159EF4A
+P 4000 2500
+F 0 "R5" H 3850 2600 50  0000 C CNN
+F 1 "0R" H 4150 2600 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 4000 2350 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0805FR-070RL_C100045.html" H 4000 2900 50  0001 C CNN
+F 4 "RC0805FR-070RL" H 4000 2275 50  0001 C CNN "Part Number"
+	1    4000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L passives:5k1 R14
+U 1 1 615AA785
+P 6200 3300
+F 0 "R14" H 6050 3250 50  0000 C CNN
+F 1 "5k1" H 6350 3250 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 6200 3150 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810112312_YAGEO-RC0805FR-075K1L_C84375.pdf" H 6200 3700 50  0001 C CNN
+F 4 "RC0805FR-075K1L" H 6200 3075 50  0001 C CNN "Part Number"
+	1    6200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:5V_USB #PWR013
+U 1 1 615AEFD0
+P 6650 3350
+F 0 "#PWR013" H 6650 3300 50  0001 C CNN
+F 1 "5V_USB" H 6650 3475 50  0000 C CNN
+F 2 "" H 6650 3550 50  0001 C CNN
+F 3 "" H 6650 3550 50  0001 C CNN
+	1    6650 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3450 6650 3450
+Wire Wire Line
+	6650 3450 6650 3400
+Connection ~ 6050 3450
+Wire Wire Line
+	6400 2350 6400 2400
+NoConn ~ 6000 2600
+$Comp
+L passives:5k1 R13
+U 1 1 615B4A8C
+P 6200 2700
+F 0 "R13" H 6050 2650 50  0000 C CNN
+F 1 "5k1" H 6350 2650 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 6200 2550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810112312_YAGEO-RC0805FR-075K1L_C84375.pdf" H 6200 3100 50  0001 C CNN
+F 4 "RC0805FR-075K1L" H 6200 2475 50  0001 C CNN "Part Number"
+	1    6200 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2700 6400 3300
+$Comp
+L power_and_ground:GND #GND016
+U 1 1 615B7000
+P 6400 3700
+F 0 "#GND016" H 6400 3750 50  0001 C CNN
+F 1 "GND" H 6400 3550 50  0000 C CNN
+F 2 "" H 6400 3700 50  0001 C CNN
+F 3 "" H 6400 3700 50  0001 C CNN
+	1    6400 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3700 6400 3300
+Connection ~ 6400 3300
+Wire Notes Line
+	950  6050 2100 6050
+Text Notes 1400 5350 0    50   ~ 0
+RESET
+Wire Notes Line
+	950  6050 950  5250
+Wire Notes Line
+	950  5250 2100 5250
+Wire Notes Line
+	2100 5250 2100 6050
+Text GLabel 1650 3300 0    50   Input ~ 0
+BOOT
+$Comp
+L switches:Switch SW2
+U 1 1 615BDD5C
+P 2800 5700
+F 0 "SW2" H 2825 5925 50  0000 C CNN
+F 1 "Switch" H 2825 5834 50  0000 C CNN
+F 2 "footprints:SW_PUSH_6mm" H 2800 5550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2001071208_XKB-Connectivity-TC-1102-B-B-B_C480282.pdf" H 2800 6000 50  0001 C CNN
+F 4 "TC-1102-B-B-B" H 2800 5450 50  0001 C CNN "Part Number"
+	1    2800 5700
+	1    0    0    -1  
+$EndComp
+Text GLabel 2650 5700 0    50   Input ~ 0
+BOOT
+$Comp
+L power_and_ground:GND #GND06
+U 1 1 615C1088
+P 3050 5750
+F 0 "#GND06" H 3050 5800 50  0001 C CNN
+F 1 "GND" H 3050 5600 50  0000 C CNN
+F 2 "" H 3050 5750 50  0001 C CNN
+F 3 "" H 3050 5750 50  0001 C CNN
+	1    3050 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 5700 3050 5700
+Wire Wire Line
+	3050 5700 3050 5750
+Text Notes 2650 5350 0    50   ~ 0
+BOOT
+Wire Notes Line
+	2350 6000 3150 6000
+Wire Notes Line
+	3150 6000 3150 5250
+Wire Notes Line
+	3150 5250 2350 5250
+Wire Notes Line
+	2350 5250 2350 6000
+$Comp
+L connectors:1x4pin J3
+U 1 1 615D2F88
+P 3950 5000
+F 0 "J3" H 4028 5051 50  0000 L CNN
+F 1 "1x4pin" H 4028 4960 50  0000 L CNN
+F 2 "footprints:PinHeader_1x04_P2.54mm_Vertical" H 3950 4650 50  0001 C CNN
+F 3 "" H 4250 4500 50  0001 C CNN
+	1    3950 5000
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 2600 0    50   Input ~ 0
+IO4
+Text GLabel 1650 2700 0    50   Input ~ 0
+IO5
+Text GLabel 1650 3000 0    50   Input ~ 0
+IO6
+Text GLabel 1650 3100 0    50   Input ~ 0
+IO7
+Text GLabel 3800 5150 0    50   Input ~ 0
+IO7
+Text GLabel 3800 5050 0    50   Input ~ 0
+IO6
+Text GLabel 3800 4950 0    50   Input ~ 0
+IO5
+Text GLabel 3800 4850 0    50   Input ~ 0
+IO4
+Text GLabel 3800 5850 0    50   Input ~ 0
+IO6
+Text GLabel 3800 5650 0    50   Input ~ 0
+IO5
+Text GLabel 3800 5450 0    50   Input ~ 0
+IO4
+Wire Notes Line
+	3350 4600 4800 4600
+Wire Notes Line
+	4800 4600 4800 6000
+Wire Notes Line
+	4800 6000 3350 6000
+Wire Notes Line
+	3350 6000 3350 4600
+$Comp
+L power_and_ground:GND #GND010
+U 1 1 6160A4AF
+P 5400 5100
+F 0 "#GND010" H 5400 5150 50  0001 C CNN
+F 1 "GND" H 5400 4950 50  0000 C CNN
+F 2 "" H 5400 5100 50  0001 C CNN
+F 3 "" H 5400 5100 50  0001 C CNN
+	1    5400 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5050 5400 5050
+Wire Wire Line
+	5400 5050 5400 5100
+$Comp
+L power_and_ground:5V_IN #PWR011
+U 1 1 6160DD3C
+P 6100 4800
+F 0 "#PWR011" H 6100 4750 50  0001 C CNN
+F 1 "5V_IN" H 6100 4900 50  0000 C CNN
+F 2 "" H 6100 5000 50  0001 C CNN
+F 3 "" H 6100 5000 50  0001 C CNN
+	1    6100 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4900 6100 4850
+$Comp
+L power_and_ground:GND #GND014
+U 1 1 61610775
+P 6100 5100
+F 0 "#GND014" H 6100 5150 50  0001 C CNN
+F 1 "GND" H 6100 4950 50  0000 C CNN
+F 2 "" H 6100 5100 50  0001 C CNN
+F 3 "" H 6100 5100 50  0001 C CNN
+	1    6100 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 5050 6100 5100
+Wire Wire Line
+	6000 4900 6100 4900
+Wire Wire Line
+	6000 5050 6100 5050
+Wire Notes Line
+	5500 1950 6950 1950
+Wire Notes Line
+	6950 1950 6950 3900
+Wire Notes Line
+	6950 3900 5500 3900
+Wire Notes Line
+	5500 3900 5500 1950
+Wire Notes Line
+	10500 1350 10500 2450
+Wire Notes Line
+	10500 2450 7500 2450
+Wire Notes Line
+	7500 2450 7500 1350
+Wire Notes Line
+	7500 1350 10500 1350
+$Comp
+L power_and_ground:VDD33 #PWR09
+U 1 1 6165080E
+P 5950 6400
+F 0 "#PWR09" H 5950 6350 50  0001 C CNN
+F 1 "VDD33" H 5950 6500 50  0000 C CNN
+F 2 "" H 5950 6600 50  0001 C CNN
+F 3 "" H 5950 6600 50  0001 C CNN
+	1    5950 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:GND #GND011
+U 1 1 616512E2
+P 5950 6750
+F 0 "#GND011" H 5950 6800 50  0001 C CNN
+F 1 "GND" H 5950 6600 50  0000 C CNN
+F 2 "" H 5950 6750 50  0001 C CNN
+F 3 "" H 5950 6750 50  0001 C CNN
+	1    5950 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L connectors:JST-XH-3 J6
+U 1 1 6165775F
+P 6150 7400
+F 0 "J6" H 6278 7451 50  0000 L CNN
+F 1 "JST-XH-3" H 6278 7360 50  0000 L CNN
+F 2 "footprints:JST_XH_B03B-XH-A_03x2.50mm_Straight" H 6150 8300 50  0001 C CNN
+F 3 "" H 6150 8300 50  0001 C CNN
+	1    6150 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:VDD33 #PWR010
+U 1 1 61657765
+P 5950 7200
+F 0 "#PWR010" H 5950 7150 50  0001 C CNN
+F 1 "VDD33" H 5950 7300 50  0000 C CNN
+F 2 "" H 5950 7400 50  0001 C CNN
+F 3 "" H 5950 7400 50  0001 C CNN
+	1    5950 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:GND #GND012
+U 1 1 6165776B
+P 5950 7550
+F 0 "#GND012" H 5950 7600 50  0001 C CNN
+F 1 "GND" H 5950 7400 50  0000 C CNN
+F 2 "" H 5950 7550 50  0001 C CNN
+F 3 "" H 5950 7550 50  0001 C CNN
+	1    5950 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ics:AMS1117-3.3 U6
+U 1 1 61550CB7
+P 8950 1950
+F 0 "U6" H 8950 2325 50  0000 C CNN
+F 1 "AMS1117-3.3" H 8950 2234 50  0000 C CNN
+F 2 "footprints:SOT229P700X180-4N" H 8950 1625 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811142212_Advanced-Monolithic-Systems-AMS1117-3-3_C6186.pdf" H 8900 2450 50  0001 C CNN
+	1    8950 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 9300 1800
+$Comp
+L relays:G5LA-14-DC5 U4
+U 1 1 6158206B
+P 8350 4150
+F 0 "U4" H 8300 3950 50  0000 C CNN
+F 1 "G5LA-14-DC5" H 8300 3800 50  0000 C CNN
+F 2 "footprints:RELAY_SRD-05VDC-SL-C" H 8350 3850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809191411_Omron-Electronics-G5LA-14-DC5_C27822.pdf" H 8400 3750 50  0001 C CNN
+	1    8350 4150
+	1    0    0    1   
+$EndComp
+$Comp
+L transistors:BC547B Q2
+U 1 1 61582071
+P 7950 4500
+F 0 "Q2" H 8065 4546 50  0000 L CNN
+F 1 "BC547B" H 8065 4455 50  0000 L CNN
+F 2 "footprints:TO127P254X732-3" H 8625 4925 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2008011835_LGE-BC547B_C713613.pdf" H 7900 5150 50  0001 C CNN
+	1    7950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L diodes:1N4148 D3
+U 1 1 61582077
+P 8000 4200
+F 0 "D3" H 8025 4425 50  0000 C CNN
+F 1 "1N4148" H 8025 4334 50  0000 C CNN
+F 2 "footprints:DIOAD829W49L456D191" H 8000 4000 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809281716_ST-Semtech-1N4148_C14538.pdf" H 8000 4450 50  0001 C CNN
+	1    8000 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8000 4050 8100 4050
+Wire Wire Line
+	8100 4050 8100 4100
+Wire Wire Line
+	8100 4100 8150 4100
+Wire Wire Line
+	8000 4300 8100 4300
+Wire Wire Line
+	8100 4300 8100 4200
+Wire Wire Line
+	8100 4200 8150 4200
+Connection ~ 8000 4300
+$Comp
+L power_and_ground:GND #GND018
+U 1 1 6158208B
+P 8000 4700
+F 0 "#GND018" H 8000 4750 50  0001 C CNN
+F 1 "GND" H 8000 4550 50  0000 C CNN
+F 2 "" H 8000 4700 50  0001 C CNN
+F 3 "" H 8000 4700 50  0001 C CNN
+	1    8000 4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 8550 4150 2    50   Input ~ 0
+MOTOR_B
+$Comp
+L relays:G5LA-14-DC5 U3
+U 1 1 615904CF
+P 8300 2900
+F 0 "U3" H 8250 2700 50  0000 C CNN
+F 1 "G5LA-14-DC5" H 8250 2550 50  0000 C CNN
+F 2 "footprints:RELAY_SRD-05VDC-SL-C" H 8300 2600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809191411_Omron-Electronics-G5LA-14-DC5_C27822.pdf" H 8350 2500 50  0001 C CNN
+	1    8300 2900
+	1    0    0    1   
+$EndComp
+$Comp
+L transistors:BC547B Q1
+U 1 1 615904D5
+P 7900 3250
+F 0 "Q1" H 8015 3296 50  0000 L CNN
+F 1 "BC547B" H 8015 3205 50  0000 L CNN
+F 2 "footprints:TO127P254X732-3" H 8575 3675 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2008011835_LGE-BC547B_C713613.pdf" H 7850 3900 50  0001 C CNN
+	1    7900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L diodes:1N4148 D2
+U 1 1 615904DB
+P 7950 2950
+F 0 "D2" H 7975 3175 50  0000 C CNN
+F 1 "1N4148" H 7975 3084 50  0000 C CNN
+F 2 "footprints:DIOAD829W49L456D191" H 7950 2750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809281716_ST-Semtech-1N4148_C14538.pdf" H 7950 3200 50  0001 C CNN
+	1    7950 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L passives:5k1 R7
+U 1 1 615904E2
+P 4000 5450
+F 0 "R7" H 3850 5550 50  0000 C CNN
+F 1 "5k1" H 4150 5550 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 4000 5300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810112312_YAGEO-RC0805FR-075K1L_C84375.pdf" H 4000 5850 50  0001 C CNN
+F 4 "RC0805FR-075K1L" H 4000 5225 50  0001 C CNN "Part Number"
+	1    4000 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2800 8050 2800
+Wire Wire Line
+	8050 2800 8050 2850
+Wire Wire Line
+	8050 2850 8100 2850
+Wire Wire Line
+	7950 3050 8050 3050
+Wire Wire Line
+	8050 3050 8050 2950
+Wire Wire Line
+	8050 2950 8100 2950
+Connection ~ 7950 3050
+$Comp
+L power_and_ground:GND #GND017
+U 1 1 615904EF
+P 7950 3450
+F 0 "#GND017" H 7950 3500 50  0001 C CNN
+F 1 "GND" H 7950 3300 50  0000 C CNN
+F 2 "" H 7950 3450 50  0001 C CNN
+F 3 "" H 7950 3450 50  0001 C CNN
+	1    7950 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 8500 2900 2    50   Input ~ 0
+MOTOR_A
+Text GLabel 9500 3450 0    50   Input ~ 0
+MOTOR_A
+Text GLabel 9500 3550 0    50   Input ~ 0
+MOTOR_B
+$Comp
+L power_and_ground:24V_IN #PWR019
+U 1 1 61597B36
+P 8500 2750
+F 0 "#PWR019" H 8500 2700 50  0001 C CNN
+F 1 "24V_IN" H 8500 2850 50  0000 C CNN
+F 2 "" H 8500 2950 50  0001 C CNN
+F 3 "" H 8500 2950 50  0001 C CNN
+	1    8500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:GND #GND021
+U 1 1 6159A50B
+P 8500 3000
+F 0 "#GND021" H 8500 3050 50  0001 C CNN
+F 1 "GND" H 8500 2850 50  0000 C CNN
+F 2 "" H 8500 3000 50  0001 C CNN
+F 3 "" H 8500 3000 50  0001 C CNN
+	1    8500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:24V_IN #PWR020
+U 1 1 6159E5E9
+P 8550 4000
+F 0 "#PWR020" H 8550 3950 50  0001 C CNN
+F 1 "24V_IN" H 8550 4100 50  0000 C CNN
+F 2 "" H 8550 4200 50  0001 C CNN
+F 3 "" H 8550 4200 50  0001 C CNN
+	1    8550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:GND #GND022
+U 1 1 615A14A2
+P 8550 4250
+F 0 "#GND022" H 8550 4300 50  0001 C CNN
+F 1 "GND" H 8550 4100 50  0000 C CNN
+F 2 "" H 8550 4250 50  0001 C CNN
+F 3 "" H 8550 4250 50  0001 C CNN
+	1    8550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L relays:G5LA-14-DC5 U5
+U 1 1 615A7134
+P 8350 5700
+F 0 "U5" H 8300 5500 50  0000 C CNN
+F 1 "G5LA-14-DC5" H 8300 5350 50  0000 C CNN
+F 2 "footprints:RELAY_SRD-05VDC-SL-C" H 8350 5400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809191411_Omron-Electronics-G5LA-14-DC5_C27822.pdf" H 8400 5300 50  0001 C CNN
+	1    8350 5700
+	1    0    0    1   
+$EndComp
+$Comp
+L transistors:BC547B Q3
+U 1 1 615A713A
+P 7950 6050
+F 0 "Q3" H 8065 6096 50  0000 L CNN
+F 1 "BC547B" H 8065 6005 50  0000 L CNN
+F 2 "footprints:TO127P254X732-3" H 8625 6475 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2008011835_LGE-BC547B_C713613.pdf" H 7900 6700 50  0001 C CNN
+	1    7950 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L diodes:1N4148 D4
+U 1 1 615A7140
+P 8000 5750
+F 0 "D4" H 8025 5975 50  0000 C CNN
+F 1 "1N4148" H 8025 5884 50  0000 C CNN
+F 2 "footprints:DIOAD829W49L456D191" H 8000 5550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809281716_ST-Semtech-1N4148_C14538.pdf" H 8000 6000 50  0001 C CNN
+	1    8000 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8000 5600 8100 5600
+Wire Wire Line
+	8100 5600 8100 5650
+Wire Wire Line
+	8100 5650 8150 5650
+Wire Wire Line
+	8000 5850 8100 5850
+Wire Wire Line
+	8100 5850 8100 5750
+Wire Wire Line
+	8100 5750 8150 5750
+Connection ~ 8000 5850
+$Comp
+L power_and_ground:GND #GND019
+U 1 1 615A7154
+P 8000 6250
+F 0 "#GND019" H 8000 6300 50  0001 C CNN
+F 1 "GND" H 8000 6100 50  0000 C CNN
+F 2 "" H 8000 6250 50  0001 C CNN
+F 3 "" H 8000 6250 50  0001 C CNN
+	1    8000 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:24V_IN #PWR021
+U 1 1 615A715B
+P 8550 5550
+F 0 "#PWR021" H 8550 5500 50  0001 C CNN
+F 1 "24V_IN" H 8550 5650 50  0000 C CNN
+F 2 "" H 8550 5750 50  0001 C CNN
+F 3 "" H 8550 5750 50  0001 C CNN
+	1    8550 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:5V_IN #PWR017
+U 1 1 615ACE91
+P 8000 5550
+F 0 "#PWR017" H 8000 5500 50  0001 C CNN
+F 1 "5V_IN" H 8000 5650 50  0000 C CNN
+F 2 "" H 8000 5750 50  0001 C CNN
+F 3 "" H 8000 5750 50  0001 C CNN
+	1    8000 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:5V_IN #PWR016
+U 1 1 615AEDC5
+P 8000 4000
+F 0 "#PWR016" H 8000 3950 50  0001 C CNN
+F 1 "5V_IN" H 8000 4100 50  0000 C CNN
+F 2 "" H 8000 4200 50  0001 C CNN
+F 3 "" H 8000 4200 50  0001 C CNN
+	1    8000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:5V_IN #PWR015
+U 1 1 615B0BBF
+P 7950 2750
+F 0 "#PWR015" H 7950 2700 50  0001 C CNN
+F 1 "5V_IN" H 7950 2850 50  0000 C CNN
+F 2 "" H 7950 2950 50  0001 C CNN
+F 3 "" H 7950 2950 50  0001 C CNN
+	1    7950 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L connectors:7.62mm-2pin J7
+U 1 1 615B3EDE
+P 8750 5750
+F 0 "J7" H 8828 5796 50  0000 L CNN
+F 1 "7.62mm-2pin" H 8828 5705 50  0000 L CNN
+F 2 "footprints:PhoenixContact_GMSTBVA-G_02x7.62mm_Vertical" H 8750 5500 50  0001 C CNN
+F 3 "" H 8700 6250 50  0001 C CNN
+	1    8750 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:GND #GND023
+U 1 1 615BB6FF
+P 8550 5800
+F 0 "#GND023" H 8550 5850 50  0001 C CNN
+F 1 "GND" H 8550 5650 50  0000 C CNN
+F 2 "" H 8550 5800 50  0001 C CNN
+F 3 "" H 8550 5800 50  0001 C CNN
+	1    8550 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 5700 8600 5700
+Wire Wire Line
+	8550 5800 8600 5800
+Connection ~ 8550 5800
+$Comp
+L passives:5k1 R8
+U 1 1 615D35B3
+P 4000 5650
+F 0 "R8" H 3850 5750 50  0000 C CNN
+F 1 "5k1" H 4150 5750 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 4000 5500 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810112312_YAGEO-RC0805FR-075K1L_C84375.pdf" H 4000 6050 50  0001 C CNN
+F 4 "RC0805FR-075K1L" H 4000 5425 50  0001 C CNN "Part Number"
+	1    4000 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L passives:5k1 R9
+U 1 1 615D5664
+P 4000 5850
+F 0 "R9" H 3850 5950 50  0000 C CNN
+F 1 "5k1" H 4150 5950 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 4000 5700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810112312_YAGEO-RC0805FR-075K1L_C84375.pdf" H 4000 6250 50  0001 C CNN
+F 4 "RC0805FR-075K1L" H 4000 5625 50  0001 C CNN "Part Number"
+	1    4000 5850
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 5450 2    50   Input ~ 0
+RELAY_A
+Text GLabel 4200 5650 2    50   Input ~ 0
+RELAY_B
+Text GLabel 4200 5850 2    50   Input ~ 0
+RELAY_LIGHT
+Text GLabel 7700 3250 0    50   Input ~ 0
+RELAY_A
+Text GLabel 7750 4500 0    50   Input ~ 0
+RELAY_B
+Text GLabel 7750 6050 0    50   Input ~ 0
+RELAY_LIGHT
+$Comp
+L connectors:1x4pin J2
+U 1 1 615F2DFA
+P 3650 6950
+F 0 "J2" H 3728 7001 50  0000 L CNN
+F 1 "1x4pin" H 3728 6910 50  0000 L CNN
+F 2 "footprints:PinHeader_1x04_P2.54mm_Vertical" H 3650 6600 50  0001 C CNN
+F 3 "" H 3950 6450 50  0001 C CNN
+	1    3650 6950
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 6900 0    50   Input ~ 0
+TXD
+Text GLabel 3500 7000 0    50   Input ~ 0
+RXD
+$Comp
+L power_and_ground:GND #GND07
+U 1 1 615FB42A
+P 3500 7100
+F 0 "#GND07" H 3500 7150 50  0001 C CNN
+F 1 "GND" H 3500 6950 50  0000 C CNN
+F 2 "" H 3500 7100 50  0001 C CNN
+F 3 "" H 3500 7100 50  0001 C CNN
+	1    3500 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:VDD33 #PWR06
+U 1 1 61600D0D
+P 3500 6750
+F 0 "#PWR06" H 3500 6700 50  0001 C CNN
+F 1 "VDD33" H 3500 6875 50  0000 C CNN
+F 2 "" H 3500 6950 50  0001 C CNN
+F 3 "" H 3500 6950 50  0001 C CNN
+	1    3500 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L passives:10k R10
+U 1 1 6160D8A0
+P 4600 6800
+F 0 "R10" H 4600 7000 50  0000 C CNN
+F 1 "10k" H 4600 6900 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 4600 6650 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0805JR-0710KL_C100047.html" H 4600 7200 50  0001 C CNN
+F 4 "RC0805JR-0710KL" H 4600 6575 50  0001 C CNN "Part Number"
+	1    4600 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power_and_ground:VDD33 #PWR07
+U 1 1 616107ED
+P 4600 6550
+F 0 "#PWR07" H 4600 6500 50  0001 C CNN
+F 1 "VDD33" H 4600 6650 50  0000 C CNN
+F 2 "" H 4600 6750 50  0001 C CNN
+F 3 "" H 4600 6750 50  0001 C CNN
+	1    4600 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:GND #GND09
+U 1 1 61612886
+P 4600 7100
+F 0 "#GND09" H 4600 7150 50  0001 C CNN
+F 1 "GND" H 4600 6950 50  0000 C CNN
+F 2 "" H 4600 7100 50  0001 C CNN
+F 3 "" H 4600 7100 50  0001 C CNN
+	1    4600 7100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 7000 0    50   Input ~ 0
+IO7
+Wire Wire Line
+	4300 7000 4600 7000
+Connection ~ 4600 7000
+Text Notes 4700 6750 0    50   ~ 0
+BUTTON
+Text GLabel 1650 2200 0    50   Input ~ 0
+IO0
+Text GLabel 1650 2300 0    50   Input ~ 0
+IO1
+$Comp
+L passives:5k1 R11
+U 1 1 61623587
+P 5750 6600
+F 0 "R11" H 5600 6700 50  0000 C CNN
+F 1 "5k1" H 5900 6700 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 5750 6450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810112312_YAGEO-RC0805FR-075K1L_C84375.pdf" H 5750 7000 50  0001 C CNN
+F 4 "RC0805FR-075K1L" H 5750 6375 50  0001 C CNN "Part Number"
+	1    5750 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L passives:5k1 R12
+U 1 1 61625640
+P 5750 7400
+F 0 "R12" H 5600 7500 50  0000 C CNN
+F 1 "5k1" H 5900 7500 50  0000 C CNN
+F 2 "footprints:RESC2012X60" H 5750 7250 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810112312_YAGEO-RC0805FR-075K1L_C84375.pdf" H 5750 7800 50  0001 C CNN
+F 4 "RC0805FR-075K1L" H 5750 7175 50  0001 C CNN "Part Number"
+	1    5750 7400
+	1    0    0    -1  
+$EndComp
+Text GLabel 5550 6600 0    50   Input ~ 0
+IO0
+Text GLabel 5550 7400 0    50   Input ~ 0
+IO1
+Text Notes 5750 6150 0    50   ~ 0
+LIMIT SWITCHES
+Connection ~ 7950 2800
+Connection ~ 8000 4050
+Connection ~ 8000 5600
+$Comp
+L power_and_ground:24V_IN #PWR05
+U 1 1 61670931
+P 2300 6850
+F 0 "#PWR05" H 2300 6800 50  0001 C CNN
+F 1 "24V_IN" H 2300 6950 50  0000 C CNN
+F 2 "" H 2300 7050 50  0001 C CNN
+F 3 "" H 2300 7050 50  0001 C CNN
+	1    2300 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power_and_ground:GND #GND05
+U 1 1 616788DE
+P 2300 7000
+F 0 "#GND05" H 2300 7050 50  0001 C CNN
+F 1 "GND" H 2300 6850 50  0000 C CNN
+F 2 "" H 2300 7000 50  0001 C CNN
+F 3 "" H 2300 7000 50  0001 C CNN
+	1    2300 7000
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4950 4600 6250 4600
+Wire Notes Line
+	6250 4600 6250 5300
+Wire Notes Line
+	4950 5300 4950 4600
+$Comp
+L diodes:STPS1H100U D1
+U 1 1 619C26F7
+P 5400 4900
+F 0 "D1" H 5400 5000 50  0000 C CNN
+F 1 "STPS1H100U" H 5200 4800 50  0000 C CNN
+F 2 "footprints:DIOM5436X245N" H 5400 4700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810130916_STMicroelectronics-STPS1H100U_C165939.pdf" H 5350 5400 50  0001 C CNN
+F 4 "STPS1H100U" H 5400 4600 50  0001 C CNN "Part Number"
+	1    5400 4900
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6250 5300 4950 5300
+$Comp
+L power_and_ground:24V_IN #PWR08
+U 1 1 616081E7
+P 5150 4850
+F 0 "#PWR08" H 5150 4800 50  0001 C CNN
+F 1 "24V_IN" H 5150 4950 50  0000 C CNN
+F 2 "" H 5150 5050 50  0001 C CNN
+F 3 "" H 5150 5050 50  0001 C CNN
+	1    5150 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4900 5150 4900
+$EndSCHEMATC

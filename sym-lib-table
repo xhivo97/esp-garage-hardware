@@ -1,0 +1,13 @@
+(sym_lib_table
+  (lib (name Espressif)(type Legacy)(uri ${KIPRJMOD}/components/Espressif.lib)(options "")(descr ""))
+  (lib (name power_and_ground)(type Legacy)(uri ${KIPRJMOD}/components/power_and_ground.lib)(options "")(descr ""))
+  (lib (name passives)(type Legacy)(uri ${KIPRJMOD}/components/passives.lib)(options "")(descr ""))
+  (lib (name connectors)(type Legacy)(uri ${KIPRJMOD}/components/connectors.lib)(options "")(descr ""))
+  (lib (name ics)(type Legacy)(uri ${KIPRJMOD}/components/ics.lib)(options "")(descr ""))
+  (lib (name modules)(type Legacy)(uri ${KIPRJMOD}/components/modules.lib)(options "")(descr ""))
+  (lib (name switches)(type Legacy)(uri ${KIPRJMOD}/components/switches.lib)(options "")(descr ""))
+  (lib (name leds)(type Legacy)(uri ${KIPRJMOD}/components/leds.lib)(options "")(descr ""))
+  (lib (name relays)(type Legacy)(uri ${KIPRJMOD}/components/relays.lib)(options "")(descr ""))
+  (lib (name transistors)(type Legacy)(uri ${KIPRJMOD}/components/transistors.lib)(options "")(descr ""))
+  (lib (name diodes)(type Legacy)(uri ${KIPRJMOD}/components/diodes.lib)(options "")(descr ""))
+)

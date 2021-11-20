@@ -1,0 +1,23 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 24V_IN
+K power-flag
+$ENDCMP
+#
+$CMP 5V_IN
+K power-flag
+$ENDCMP
+#
+$CMP 5V_USB
+K power-flag
+$ENDCMP
+#
+$CMP GND
+K power-flag
+$ENDCMP
+#
+$CMP VDD33
+K power-flag
+$ENDCMP
+#
+#End Doc Library

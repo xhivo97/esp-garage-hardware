@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Switch
+D Top Actuated 50mA @ 12VDC Round Button 160gf SPST
+F https://datasheet.lcsc.com/lcsc/2001071208_XKB-Connectivity-TC-1102-B-B-B_C480282.pdf
+$ENDCMP
+#
+#End Doc Library

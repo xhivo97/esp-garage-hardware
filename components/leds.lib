@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# LED
+#
+DEF LED D 0 40 Y Y 1 F N
+F0 "D" 0 150 50 H V C CNN
+F1 "LED" 0 -100 50 H V C CNN
+F2 "footprints:LED_D3.0mm" 0 -200 50 H I C CNN
+F3 "" 0 250 50 H I C CNN
+F4 "HL-304S9AD" 0 -300 50 H I C CNN "Part Number"
+DRAW
+P 2 0 1 0 -50 70 -10 110 N
+P 2 0 1 0 0 50 0 -50 N
+P 2 0 1 0 0 70 40 110 N
+P 4 0 1 0 -10 110 -30 110 -10 90 -10 110 F
+P 4 0 1 0 0 0 -50 50 -50 -50 0 0 F
+P 4 0 1 0 40 110 20 110 40 90 40 110 F
+X ~ A -150 0 100 R 50 50 1 1 P
+X ~ C 100 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

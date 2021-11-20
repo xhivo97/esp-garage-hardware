@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BC547B
+K NPN TO-92 Bipolar Transistors
+F https://datasheet.lcsc.com/lcsc/2008011835_LGE-BC547B_C713613.pdf
+$ENDCMP
+#
+#End Doc Library
